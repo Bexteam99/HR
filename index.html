@@ -310,20 +310,85 @@
             <li class="dropdown">
                 <div class="title">
                     <a href="#" class="link">
-                        <i class='bx bx-fingerprint' style='color:#f3eeee' ></i>
+                        <i class='bx bx-user-plus' style='color:#f3eeee' ></i>
                         <span class="name">Recruitment</span>
                     </a>
                     <i class='bx bxs-chevron-down'></i>
                 </div>
                 <div class="submenu">
                     <a class="link submenu-title" style="color: #ff2d00;"><b>Recruitment</b></a>
-                    <a href="#" class="link" onclick="loadIframe('Calender', 'https://www.appsheet.com/start/4b625941-8249-4d6f-8415-e4036bad3099#view=Recruitment')">Directory</a>
-                     <!-- <div>
-                    <a href="#" class="link" onclick="loadIframe('Lead', 'https://www.appsheet.com/start/4b625941-8249-4d6f-8415-e4036bad3099#view=Lead')">Lead</a>
-                    </div> -->
+                    <a href="#" class="link" onclick="openNewWindow('https://www.appsheet.com/start/4b625941-8249-4d6f-8415-e4036bad3099#view=Recruitment')">Hiring Details</a>
+
+                    <!--<div>
+                    <a href="#" class="link" onclick="openNewWindow('https://www.appsheet.com/start/b0e065c9-c3c7-4a49-a1ee-7188ba894313#view=Completed')">Completed</a>
+                   </div>-->
+
+
                 </div>
             </li>
 
+            <!-- -------- Dropdown List Item ------- -->
+
+            <!--<div>
+            <li class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-code' style='color:#ffffff' ></i>
+                        <span class="name">Coding</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a class="link submenu-title" style="color: #ff2d00;"><b>Coding</b></a>
+                    <a href="#" class="link" onclick="openNewWindow('https://www.appsheet.com/start/b0e065c9-c3c7-4a49-a1ee-7188ba894313#view=US%20Coding')">On-Shore Coding</a>
+                    <a href="#" class="link" onclick="openNewWindow('https://www.appsheet.com/start/b0e065c9-c3c7-4a49-a1ee-7188ba894313#view=Internal%20Coding')">Off-Shore Coding</a>
+                </div>
+            </li>
+
+        </div>-->
+
+            <!-- -------- Dropdown List Item ------- -->
+
+            <!--<div>
+            <li class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-message-square-dots' style='color:#f3eeee' ></i>
+                        <span class="name">Follow-up</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a class="link submenu-title" style="color: #ff2d00;"><b>Follow-up</b></a>
+                    <a href="#" class="link" onclick="openNewWindow('https://www.appsheet.com/start/b0e065c9-c3c7-4a49-a1ee-7188ba894313#view=Coding%20Calling')">Coding Calling</a>
+                    <a href="#" class="link" onclick="openNewWindow('https://www.appsheet.com/start/b0e065c9-c3c7-4a49-a1ee-7188ba894313#view=Coding%20AR%20Team%20follow%20up')">Coding AR</a>
+                    <a href="#" class="link" onclick="openNewWindow('https://www.appsheet.com/start/b0e065c9-c3c7-4a49-a1ee-7188ba894313#view=Coding%20AR%20Team%20-%20Urgency')">Coding AR - Urgency</a>
+                    <a href="#" class="link" onclick="openNewWindow('https://www.appsheet.com/start/b0e065c9-c3c7-4a49-a1ee-7188ba894313#view=Core%20AR%20Team')">Core AR Team</a>
+                </div>
+            </li>
+</div>-->
+
+            <!-- -------- Dropdown List Item ------- -->
+
+            <!--<div>
+            <li class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-cross' style='color:#f3eeee' ></i>
+                        <span class="name">Others</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a class="link submenu-title" style="color: #ff2d00;"><b>Others</b></a>
+                    <a href="#" class="link" onclick="openNewWindow('https://www.appsheet.com/start/b0e065c9-c3c7-4a49-a1ee-7188ba894313#view=Escalation')">Esclation</a>
+                    <a href="#" class="link" onclick="openNewWindow('https://www.appsheet.com/start/b0e065c9-c3c7-4a49-a1ee-7188ba894313#view=Provider%2FThird%20Party')">Provider/Third Party</a>
+                </div>
+            </li>
+
+        </div>-->
+
+            <!-- -------- Non Dropdown List Item ------- -->
             <!-- More list items here -->
 
         </ul>
@@ -369,6 +434,11 @@
             // Clear previous content and append new iframe
             cardContainer.innerHTML = "";
             cardContainer.appendChild(card);
+        }
+
+                // Function to open a new window with a specific URL
+                function openNewWindow(url) {
+            window.open(url, "_blank");
         }
 
         // Automatically load dashboard upon page refresh
